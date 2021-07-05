@@ -1,0 +1,40 @@
+.product-cartd {
+	list-style: none;
+	display: block;
+	width: 240px;
+}
+.product-card .thumb {
+	position: relative;
+	margin-bottom: 10px;
+	}
+.product-card .thumb a {
+	display: flex;
+	height: 200px;
+	align-items: center;
+	justify-content: center;
+	}
+.product-card .thumb a img {
+	max-height: 95%;
+	max-width: 95%;
+	}
+.product-card .thumb .add-to-favourites {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	height: 40px;
+	width:40px ;
+	background: none;
+	border: none;
+	outline: none;
+	transition: 0.3s;
+	border-radius: 4px;
+	}
+.product-card .thumb .add-to-favourites:hover {
+	background: #e7e7e7;
+	transition: 0.3s;
+}
+.product-card .thumb .add-to-favourites svg {
+	width: 24px;
+	height: 24px;
+	fill: #faa900;
+	}
