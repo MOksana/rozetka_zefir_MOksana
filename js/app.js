@@ -1,7 +1,7 @@
 $(document).ready(function(){
 		var sliderOptions = {
   
-  	prevArrow: '<div class="prev-button"> <svg> <use href="#shevron-right"> </use> </svg></div>',
+  	prevArrow: '<div class="prev-button"> <svg> <use href="#shevron-right"> </use> </svg> </div>',
   	nextArrow: '<div class="next-button"> <svg> <use href="#shevron-right"> </use> </svg> </div>'
   };
   $('.home__content-slider').slick(sliderOptions)
