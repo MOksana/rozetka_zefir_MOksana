@@ -1,7 +1,8 @@
 .product-cartd {
 	list-style: none;
-	width: 240px;
 	display: block;
+	width: 240px;
+	
 }
 .product-card .thumb {
 	position: relative;
@@ -48,12 +49,13 @@
 	.product-card .thumb .add-to-favourites.in-favourites svg.filled {
 		display: inline-block;
 	}
-.product-card .title{
+.product-card .title {
 	font-size: 14px;
 	color: #333;
 	text-decoration: none;
 	margin-bottom: 10px;
 	display: block;
+	line-height: 1.2;
 }
 .product-card .title:hover {
 	color: #f00;
