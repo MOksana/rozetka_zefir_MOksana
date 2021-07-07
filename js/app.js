@@ -51,7 +51,7 @@ favouriteProducts.splice(index, 1);
 //додаємо одиницю до лічильника обраних
 //currentCount = currentCount + 1;
 //currentCount++;
-
+}
 // Зберігаємо список обраних у браузері
 	window.localStorage.setItem('product', favouriteProducts);
 	
@@ -103,7 +103,7 @@ $(document).ready(function(){
 				alert(searchTerm);
 			});
 
-			$(document).on('click','.header__menu-toggle', function(){
+			$(document).on('click', '.header__menu-toggle', function(){
              //$(this).addClass('opened');
              //if($(this).hasClass('opened')){
              	//$(this).removeClass('opened'); 
@@ -129,12 +129,12 @@ $(document).ready(function(){
 				age:35
 			}
 
-			function fullNameFunction(first,last){
-				var fullName = first+' '+last;
-				return fullName;
-			}
+			//function fullNameFunction(first,last){
+				//var fullName = first+' '+last;
+				//return fullName;
+			//}
 			
-			var myFullName = fullNameFunction(myData.firstName, myData.lastName);
+			//var myFullName = fullNameFunction(myData.firstName, myData.lastName);
 
             //alert(myFullName);
 
@@ -146,7 +146,7 @@ $(document).ready(function(){
             	<svg>
             	<use href="#heart"></use>
             	</svg> <svg class='filled'>
-            	<use href="#heart1"></use>
+            	<use href="#heart_filled"></use>
             	</svg> 
             	</button>
 
@@ -158,7 +158,7 @@ $(document).ready(function(){
             	<a href="#" class="title">
             	${product.title}
             	</a>
-            	<div class="old price">
+            	<div class="old-price">
             	${product.price * 1.2} 
             	</div>
             	<div class="price">
@@ -187,9 +187,10 @@ $(document).ready(function(){
             			if(count < 4){
             				var html = createProductHtml(product);
             				allHtml = allHtml + html;
+            				count++;
             			}
             		});
-            		$('.home__product-list ul').html(allHtml);
+            		$('.home__product-list ul').prepend(allHtml);
             		checkIfFavourites();
             	})
             	.catch((error)=> {

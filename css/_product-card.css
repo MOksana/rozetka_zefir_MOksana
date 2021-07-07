@@ -2,8 +2,8 @@
 	list-style: none;
 	display: block;
 	width: 240px;
-	
 }
+
 .product-card .thumb {
 	position: relative;
 	margin-bottom: 10px;
@@ -73,8 +73,8 @@
 	font-size: 24px;
 	color: #f84147;
 	}
-.availability {
-font-size: 12px;
+.availablity {
+font-size: 14px;
 color: #797878;
 font-weight: 300;
 }

@@ -306,7 +306,7 @@
 	height: 340px;
 }
 	.home__banner-slider .prev-button,
-	.home__banner-slider .next-button{
+	.home__banner-slider .next-button {
 		position: absolute;
 		top: 50%;
 		width: 40px;
@@ -343,4 +343,32 @@
 	display: flex;
 	padding: 0;
 	margin: 0;
+	list-style-type: none;
+}
+.home__catalog img {
+	height: 24px;
+	width: 24px;
+	box-sizing: border-box;	
+}
+.menu__catalog span {
+color: #3E77AA;
+position: relative;
+display: inline-block;
+vertical-align: bottom;
+width: 100%;
+z-index: 10;
+padding-left: 12px;
+padding-right: 12px;
+box-sizing: border-box;
+font-size: 14px;
+line-height: 31px;
+}
+.menu__catalog span:hover {
+	color: #f00;
+	text-decoration: underline;
+	}
+.menu__catalog li {
+	list-style-type: none;
+	list-style-position: outside;
+
 }
