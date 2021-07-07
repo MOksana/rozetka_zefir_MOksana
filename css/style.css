@@ -365,3 +365,8 @@ line-height: 25px;
 	.home__banner-slider .slick-slide {
 		height: 300px;
 	}
+.home__product-list ul {
+	display: flex;
+	padding: 0;
+	margin: 0;
+}
