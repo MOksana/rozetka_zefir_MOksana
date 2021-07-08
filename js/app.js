@@ -151,7 +151,7 @@ $(document).ready(function(){
             	</button>
 
             	<a href="#">
-            	<img src="${product.img}">
+            	<img src="${product.image}">
             	</a>
 
             	</div>
